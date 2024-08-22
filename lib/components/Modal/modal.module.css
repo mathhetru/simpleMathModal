@@ -1,0 +1,103 @@
+.m-modal {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border: 0px;
+  overflow: auto;
+  background-color: rgba(26, 39, 156, 0.4);
+}
+
+.m-modal-content {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(45%);
+  margin: auto;
+  animation-name: modalopen;
+  animation-duration: 0.8s;
+}
+
+.small {
+  max-width: 30vw;
+}
+
+.medium {
+  max-width: 50vw;
+}
+
+.large {
+  max-width: 70vw;
+}
+
+.m-modal-header {
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-modal-header__text {
+  margin: 0;
+}
+
+.m-modal-header__button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: black;
+  border: none;
+  background-color: transparent;
+}
+
+.m-modal-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+}
+
+.m-modal-main__text {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.m-modal-footer {
+  margin: 1rem;
+}
+
+.m-modal-footer__button {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.m-modal-footer__button:hover {
+  background-color: grey;
+  transition: 0.2s linear;
+}
+
+/** KEYFRAME ANIMATION **/
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
