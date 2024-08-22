@@ -8,7 +8,7 @@ It was made for the 14th Openclassrooms project of Front-end Web Developper trai
 ### Install
 
 ```bash
-npm i simplemathmodal
+npm i simple-modal-math
 ```
 
 ### Install depencies
@@ -16,7 +16,7 @@ npm i simplemathmodal
 To use the Modal component in your project, you need to have the following dependencies installed:
 
 ```bash
-npm install react@^18.2.55 react-dom@^18.2.19 prop-types@^15.8.1 @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+npm install react@^18.2.55 react-dom@^18.2.19 @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Here's how you can use the Modal component in your React application:
 
 ```javascript
 import React, { useState } from "react";
-import Modal from "simplemathmodal";
+import { Modal } from "simple-modal-math";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -133,7 +133,7 @@ You can customize the styles by modifying the provided CSS or adding your own.
 
 ```javascript
 import React, { useState } from "react";
-import Modal from "simplemathmodal";
+import { Modal } from "simple-modal-math";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -163,10 +163,6 @@ export default App;
 ```
 
 This will render a modal with a header, main content area, and a footer with a close button. The modal can be closed by clicking the close button or by triggering the onClose function passed as a prop.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contributing
 

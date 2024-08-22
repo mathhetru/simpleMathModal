@@ -2,7 +2,7 @@
   "name": "simple-modal-math",
   "author": "Mathilde Hétru",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mathhetru/simple-modal-math"
+    "url": "git+https://github.com/mathhetru/simple-modal-math"
   },
   "sideEffects": [
     "**/*.css"

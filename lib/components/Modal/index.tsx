@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import "./modal.module.css";
+import "./modal.css";
 
 interface ModalProps {
   isOpen?: boolean;
