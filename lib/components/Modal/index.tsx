@@ -70,7 +70,7 @@ export function Modal(props: ModalProps) {
   };
 
   return isOpen ? (
-    <dialog className="m-modal">
+    <dialog role="dialog" aria-modal={isOpen} className="m-modal">
       <div className={`m-modal-content ${modalSize}`}>
         {addHeader()}
         <section className="m-modal-main">
